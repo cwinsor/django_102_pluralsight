@@ -41,3 +41,12 @@ $Env:PYTHONPATH=$ENV:PYTHONPATH + '/lib;'
 " "
 "to start visual studio code:"
 "code -n ."
+
+#################################################
+# run the web application
+" "
+"to run the web application:"
+"cd tictactoe; python manage.py runserver"
+
+
+" "

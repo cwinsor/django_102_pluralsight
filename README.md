@@ -1,2 +1,4 @@
 # django_102_pluralsight
-Pluralsight django S Holderness
+This follows
+Pluralsight "Django Fundamentals"
+by Reindert-Jan Ekker
