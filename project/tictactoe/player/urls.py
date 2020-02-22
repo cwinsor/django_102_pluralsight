@@ -3,7 +3,7 @@ from django.urls import path
 from django.contrib.auth.views import LoginView, LogoutView
 
 from .views import home
-from .views import new_invitation
+from .views import new_invitation, accept_invitation
 
 urlpatterns = [
     path(
@@ -26,4 +26,9 @@ urlpatterns = [
         'new_invitation/',
         new_invitation,
         name='player_new_invitation'),
+
+    path(
+        'accept_invitation/<int:id>',
+        accept_invitation,
+        name='player_accept_invitation'),
 ]
