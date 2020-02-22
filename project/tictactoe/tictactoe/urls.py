@@ -19,7 +19,7 @@ from django.contrib import admin
 from .views import welcome
 
 urlpatterns = [
-    path(r'admin/', admin.site.urls),
-    path('', welcome),
+    path('', welcome, name='tictactoe_welcome'),
+    path('admin/', admin.site.urls),
     path('player/', include('player.urls')),
 ]

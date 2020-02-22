@@ -37,16 +37,20 @@ $Env:PYTHONPATH=$ENV:PYTHONPATH + '/lib;'
 
 
 #################################################
-# start vs-code
+# to start vs-code
 " "
 "to start visual studio code:"
 "code -n ."
 
 #################################################
-# run the web application
+# to run the web application
 " "
-"to run the web application:"
+"to run the application:"
 "cd tictactoe; python manage.py runserver"
-
-
+"URLs are:"
+"  http://127.0.0.1:8000 (user login)"
+"  http://127.0.0.1:8000/admin/ (admin login)"
+"  accounts are:"
+"    "alice" "aabbddcc" (no admin)"
+"    "cwinsor" "aabbddcc" (admin)"
 " "
