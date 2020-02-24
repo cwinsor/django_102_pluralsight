@@ -1,5 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import redirect
+from django.core.exceptions import PermissionDenied
 
 from .models import Game
 from .forms import MoveForm

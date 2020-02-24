@@ -9,6 +9,7 @@ class MoveForm(ModelForm):
         exclude = []
 
     def clean(self):
+        super().clean()
         x = self.cleaned_data.get('x')
         y = self.cleaned_data.get('y')
         game = self.instance.game

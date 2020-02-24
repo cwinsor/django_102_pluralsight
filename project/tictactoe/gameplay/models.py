@@ -81,14 +81,12 @@ class Move(models.Model):
     x = models.IntegerField(
         validators=[
             MinValueValidator(0),
-            MaxValueValidator(2)])
-    # MaxValueValidator(BOARD_SIZE-1)])
+            MaxValueValidator(BOARD_SIZE-1)])
 
     y = models.IntegerField(
         validators=[
             MinValueValidator(0),
-            MaxValueValidator(2)])
-    # MaxValueValidator(BOARD_SIZE-1)])
+            MaxValueValidator(BOARD_SIZE-1)])
 
     comment = models.CharField(max_length=300, blank=True)
     game = models.ForeignKey(
