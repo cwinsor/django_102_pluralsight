@@ -32,7 +32,10 @@ def new_invitation(request):
             return redirect('player_home')
     else:
         form = InvitationForm()
-    return render(request, "player/new_invitation_form.html", {'form': form})
+    return render(
+        request,
+        "player/new_invitation_form.html",
+        {'form': form})
 
 
 @login_required()
